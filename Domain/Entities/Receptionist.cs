@@ -2,7 +2,7 @@
 
 namespace Patient_Care_Management_System.Domain.Entities
 {
-    public class Receiptionist : User
+    public class Receptionist : User
     {
 
     }

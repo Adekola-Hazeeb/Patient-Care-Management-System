@@ -7,6 +7,7 @@
         public string Frequency { get; set; } 
         public int DurationInDays { get; set; } 
         public Prescription Prescription { get; set; }
+        public string PrescriptionId { get; set; }
     }
 }
-}
+

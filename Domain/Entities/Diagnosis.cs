@@ -2,7 +2,7 @@
 
 namespace Patient_Care_Management_System.Domain.Entities
 {
-    public class Diagnosis : MedicalRecords
+    public class Diagnosis : MedicalRecord
     {
         public string ConditionName { get; set; } 
         public DiagnosisSeverity Severity { get; set; } 

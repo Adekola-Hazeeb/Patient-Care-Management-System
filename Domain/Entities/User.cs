@@ -13,5 +13,6 @@ namespace Patient_Care_Management_System.Domain.Entities
         public string PasswordHash { get; set; } = null!;
         public string Salt { get; set; } = null!;
         public Roles Role { get; set; }
+        public string ImageUrl { get; set; }
     }
 }

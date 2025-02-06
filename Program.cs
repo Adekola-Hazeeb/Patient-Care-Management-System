@@ -1,7 +1,13 @@
+using Microsoft.EntityFrameworkCore;
+using Patient_Care_Management_System.Infrastructure.Context;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-
+var connectionString = builder.Configuration.GetConnectionString("_connectionString");
+builder.Services.AddDbContext<PatientCareManagementSystemDb>(option =>
+             option.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString))
+         );
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
